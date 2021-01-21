@@ -1,5 +1,6 @@
 package org.zerock.board.service;
 
+import com.fasterxml.jackson.databind.annotation.JsonTypeResolver;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.log4j.Log4j2;
 import org.springframework.data.domain.Page;
@@ -78,14 +79,13 @@ public class BoardServiceImpl implements BoardService {
             repository.save(board);
         }
 
-        /*
-        Board board = repository.getOne(boardDTO.getBno());
-
-        if (board != null) {
-            board.changeTitle(boardDTO.getTitle());
-            board.changeContent(boardDTO.getContent());
-            repository.save(board);
-        }
-         */
+//        Board board = repository.getOne(boardDTO.getBno());
+//        System.out.println(board);
+//
+//        if (board != null) {
+//            board.changeTitle(boardDTO.getTitle());
+//            board.changeContent(boardDTO.getContent());
+//            repository.save(board);
+//        }
     }
 }
